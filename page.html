@@ -1,0 +1,180 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>FeedBack Form</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <div id="modal2">
+      <div class="nav">
+        <span class="pageNumber">1/4</span>
+      </div>
+      <h3>
+        How did you hear about our company?
+      </h3>
+      <form class="form" id="page2">
+        <label class=" container">
+          <input
+            type="checkbox"
+            class="page2options"
+            value="Google Search
+          Engine"
+          />Google Search Engine
+          <span class="checkmark"></span>
+        </label>
+        <label class=" container">
+          <input
+            type="checkbox"
+            class="page2options"
+            value="A friend of
+          mine"
+          />A friend of mine
+          <span class="checkmark"></span>
+        </label>
+
+        <label class=" container">
+          <input
+            type="checkbox"
+            class="page2options"
+            value="Print
+          Advertise"
+          />Print Advertise
+          <span class="checkmark"></span>
+        </label>
+
+        <label class=" container">
+          <input
+            type="checkbox"
+            class="page2options"
+            value="Newspaper"
+          />Newspaper
+          <span class="checkmark"></span>
+        </label>
+
+        <label class=" container">
+          <input type="checkbox" class="page2options" value="Other" />Other
+          <span class="checkmark"></span>
+        </label>
+      </form>
+      <div class="buttonContainer">
+        <a class="prevButton" style="padding-right: 30%" href="index.html"
+          ><button>Previous</button></a
+        >
+
+        <a class="nextButton" onclick="display('modal2')"
+          ><button type="submit">
+            Next
+          </button></a
+        >
+      </div>
+    </div>
+    <div id="modal3" style="display: none;">
+      <div class="nav">
+        <span class="pageNumber">2/4</span>
+      </div>
+      <h3>
+        How do you rate your overall satisfaction about the service provided?
+      </h3>
+      <form class="form">
+        <label class="container"
+          >Very Satisfied
+          <input type="radio" name="radio" value="Very Satisfied" />
+          <span class="radioButton"></span>
+        </label>
+        <label class="container"
+          >Quite Satisfied
+          <input type="radio" name="radio" value="Quite Satisfied" />
+          <span class="radioButton"></span>
+        </label>
+        <label class="container"
+          >Satisfied
+          <input type="radio" name="radio" value="Satisfied" />
+          <span class="radioButton"></span>
+        </label>
+        <label class="container"
+          >Not Satisfied
+          <input type="radio" name="radio" value="Not Satisfied" />
+          <span class="radioButton"></span>
+        </label>
+      </form>
+      <div class="buttonContainer">
+        <a
+          class="prevButton"
+          style="padding-right: 30%"
+          onclick="previous('modal3')"
+          ><button>Previous</button></a
+        >
+
+        <a class="nextButton" onclick="display('modal3')"
+          ><button type="submit">
+            Next
+          </button></a
+        >
+      </div>
+    </div>
+    <div id="modal4" style="display: none;">
+      <div class="nav">
+        <span class="pageNumber">3/4</span>
+      </div>
+      <h3>
+        Do you think to suggest our company to someone?
+      </h3>
+      <form class="form">
+        <label class="container"
+          >No
+          <input type="radio" name="radio" value="No" />
+          <span class="radioButton"></span>
+        </label>
+        <label class="container"
+          >Maybe
+          <input type="radio" name="radio" value="Maybe" />
+          <span class="radioButton"></span>
+        </label>
+        <label class="container"
+          >Probably
+          <input type="radio" name="radio" value="Probably" />
+          <span class="radioButton"></span>
+        </label>
+        <label class="container"
+          >100% Sure
+          <input type="radio" name="radio" value="!00% Sure" />
+          <span class="radioButton"></span>
+        </label>
+        <label>If no, please describe in few words.</label>
+        <textarea id="textarea"> </textarea>
+      </form>
+      <div class="buttonContainer">
+        <a
+          class="prevButton"
+          style="padding-right: 30%"
+          onclick="previous('modal4')"
+          ><button>Previous</button></a
+        >
+
+        <a class="nextButton" onclick="display('modal4')"
+          ><button>Next</button></a
+        >
+      </div>
+    </div>
+    <div id="modal5" style="display: none;">
+      <div class="nav">
+        <span class="pageNumber">4/4</span>
+      </div>
+      <div id="result"></div>
+
+      <div class="buttonContainer">
+        <a
+          class="prevButton"
+          style="padding-right: 30%"
+          onclick="previous('modal5')"
+          ><button>Previous</button></a
+        >
+
+        <a class="nextButton"><button type="submit">Submit</button></a>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="script.js"></script>
+</html>

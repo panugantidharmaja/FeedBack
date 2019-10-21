@@ -1,0 +1,187 @@
+body {
+  text-align: center;
+  padding-top: 50px;
+}
+.formContainer {
+  border: rgb(104, 104, 172);
+  width: 75%;
+  text-align: center;
+  display: inline-block;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding-bottom: 10px;
+}
+form {
+  border: rgb(104, 104, 172);
+  border-bottom-style: solid;
+  width: 75%;
+  text-align: center;
+  display: inline-block;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding-bottom: 10px;
+}
+h3 {
+  color: rgb(135, 143, 145);
+  width: 60%;
+  margin-left: 20%;
+}
+input[type="radio"] {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 20px;
+}
+input[type="text"]:not(:placeholder-shown) {
+  background-color: rgb(147, 168, 236);
+  border-style: none;
+}
+.nav {
+  text-align: center;
+}
+
+.buttonContainer {
+  margin-top: 5%;
+}
+button {
+  background-color: rgb(104, 104, 172);
+  border: none;
+  color: #fff;
+  border-radius: 3px;
+  padding: 1%;
+  width: 15%;
+  font-size: 100%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  display: inline-block;
+}
+.pageNumber {
+  background-color: rgb(104, 104, 172);
+  color: #fff;
+  border-radius: 20px;
+  font-size: 15;
+  padding: 10px;
+}
+.previous,
+.next {
+  border-radius: 20px;
+  font-size: 15;
+  padding: 10px;
+}
+.previous {
+  margin-right: 10%;
+}
+#result {
+  width: 55%;
+  height: auto;
+  background-color: rgb(138, 138, 202);
+  color: white;
+  padding: 20px;
+  text-align: left;
+  font-size: 18px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-top: 40px;
+  margin-left: 20%;
+}
+.next {
+  margin-left: 10%;
+}
+.previous:hover,
+.next:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: rgb(104, 104, 172);
+}
+.container {
+  display: block;
+  position: relative;
+  padding-left: 0px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-left: 30%;
+  width: 30%;
+}
+.container input {
+  position: absolute;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
+
+.checkmark {
+  height: 20px;
+  width: 20px;
+  background-color: rgba(41, 41, 48, 0.589);
+  left: 0;
+  top: 0;
+  position: absolute;
+  border-radius: 5px;
+}
+.container:hover input ~ .checkmark {
+  background-color: rgb(157, 157, 223);
+}
+.checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+  text-align: center;
+}
+.container input:checked ~ .checkmark:after {
+  display: block;
+  text-align: center;
+}
+.container .checkmark::after {
+  left: 6px;
+  top: 2px;
+
+  width: 3px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+.radioButton {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: rgba(41, 41, 48, 0.589);
+  border-radius: 50%;
+}
+.container:hover input ~ .radioButton {
+  background-color: #ccc;
+}
+.container input:checked ~ .radioButton {
+  background-color: rgb(104, 104, 172);
+}
+.container input:checked ~ .checkmark {
+  background-color: rgb(104, 104, 172);
+}
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.radioButton:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.container input:checked ~ .radioButton:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .radioButton:after {
+  top: 5px;
+  left: 5px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+input[type="text"] {
+  padding: 5px;
+  margin: 5px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 50%;
+}
+body {
+  text-align: center;
+  padding-top: 50px;
+}
